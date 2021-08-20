@@ -6,7 +6,6 @@ class FormularioCadastro extends Component {
         super(props);
         this.titulo="";
         this.texto="";
-        this.nota
     }
     
     _handleMudancaTitulo(evento){
@@ -19,7 +18,7 @@ class FormularioCadastro extends Component {
         evento.stopPropagation();
     }
 
-    _criaNota(evento){
+    _criarNota(evento){
         evento.preventDefault();
         evento.stopPropagation();
         this.props.criarNota(this.titulo, this.texto);
